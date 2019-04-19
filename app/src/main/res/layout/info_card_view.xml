@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+       >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/article_number"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_profile"
+
+            />
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/article_number"
+            android:textSize="26sp"
+            android:text="@string/Article_1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_title"
+            android:layout_alignLeft="@id/article_title"
+            android:layout_marginStart="127dp"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/viewArticle"
+            android:textSize="14sp"
+            android:onClick="view_this_article"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
